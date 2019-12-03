@@ -1,0 +1,8 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<h2> user List view</h2>
+{% for n in notice_list %}
+<h3><a href="/firstapp/notice/{{n.id}}">{{n.subject}}</a></h3>
+{%endfor%}
+{% endblock %}
